@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بدايتنا ✨</title>
+    <style>
+        :root {
+            --primary: #bfa397;
+            --bg: #f4eae1;
+            --card: #fffbf7;
+            --text: #7a6356;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-bottom: 60px;
+        }
+        .heart-bg {
+            position: fixed;
+            font-size: 28px;
+            color: rgba(140, 105, 90, 0.18);
+            z-index: -1;
+            user-select: none;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px 10px;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2.6rem;
+            margin: 0;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .counter-container {
+            background: var(--card);
+            padding: 25px 20px;
+            border-radius: 24px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            max-width: 480px;
+            width: 90%;
+            text-align: center;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+        }
+        .time-box {
+            display: flex;
+            flex-direction: column;
+            background: #fff8f2;
+            padding: 15px 5px;
+            border-radius: 16px;
+            border: 1px solid rgba(191, 163, 151, 0.1);
+        }
+        .time-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        /* مشغل سبوتيفاي الشيك */
+        .spotify-container {
+            max-width: 480px;
+            width: 90%;
+            margin-bottom: 30px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+        }
+
+        /* رسائل الحب الكثيرة الطويلة تحت بعض */
+        .love-story-container {
+            max-width: 480px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+        .message-card {
+            background: var(--card);
+            padding: 22px;
+            border-radius: 22px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+            font-size: 1.15rem;
+            line-height: 1.7;
+            border-right: 5px solid var(--primary);
+            border-left: 1px solid rgba(191, 163, 151, 0.1);
+        }
+
+        /* الصور الكبيرة تحت بعض بالعرض كاملاً */
+        .large-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 90%;
+            max-width: 480px;
+        }
+        .large-gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 28px;
+            border: 6px solid white;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- القلوب المتناثرة في الخلفية -->
+    <div class="heart-bg" style="top: 8%; right: 6%;">🤎</div>
+    <div class="heart-bg" style="top: 25%; left: 7%;">🤎</div>
+    <div class="heart-bg" style="top: 45%; right: 9%;">🤎</div>
+    <div class="heart-bg" style="top: 65%; left: 5%;">🤎</div>
+    <div class="heart-bg" style="top: 80%; right: 8%;">🤎</div>
+    <div class="heart-bg" style="top: 92%; left: 10%;">🤎</div>
+
+    <header>
+        <h1>بدايتنا 💞</h1>
+        <p class="subtitle">💞 سوا من 02-03-2026 💞</p>
+    </header>
+
+    <!-- عداد الوقت المظبوط -->
+    <div class="counter-container">
+        <div class="time-box"><div class="time-number" id="days">0</div><div>يوم</div></div>
+        <div class="time-box"><div class="time-number" id="hours">0</div><div>ساعة</div></div>
+        <div class="time-box"><div class="time-number" id="minutes">0</div><div>دقيقة</div></div>
+        <div class="time-box"><div class="time-number" id="seconds">0</div><div>ثانية</div></div>
+    </div>
+
+    <!-- مشغل Spotify الرسمي لأغنية باين حبيت -->
+    <div class="spotify-container">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3clw4PZ77RUXFwLpM0F6w6?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <!-- كلام الحب الكتير والجميل (تحت بعض) -->
+    <div class="love-story-container">
+        <div class="message-card">انتي أجمل وأغلى حاجة حصلت في حياتي كلها يا شروق ❤️</div>
+        <div class="message-card">وجودك معايا بيخليني مبسوط ومطمن، وكل ثانية بتعدي وإحنا سوا بتسوى عندي الدنيا كلها 🌸</div>
+        <div class="message-card">ربنا يخليكي ليا وميحرمنيش من ضحكتك، ولا من وجودك في دنيتي السند والأمان دايماً ✨</div>
+        <div class="message-card">كل يوم بيعدي بحمد ربنا عليكي، انتي الضحكة اللي بتنور طريقتي والقلب الطيب اللي مستحيل أستغنى عنه 💕</div>
+        <div class="message-card">انتي مش بس حبيبتي، انتي كل دنيتي، وكل حاجة حلوة أنا عشتها وبتمناها في حياتي الجاية ❤️</div>
+        <div class="message-card">ومهما يفوت الوقت، هيفضل حبك في قلبي بيزيد كل ثانية، ربنا يديمنا لبعض العمر كله يا أغلى من روحي 💖</div>
+    </div>
+
+    <!-- الصور الكبيرة تحت بعض بالعرض كله -->
+    <div class="large-gallery">
+        <img src="IMG_0665.jpeg" alt="صورة 1">
+        <img src="IMG_1016.png" alt="صورة 2">
+        <img src="IMG_8318.jpeg" alt="صورة 3">
+    </div>
+
+    <script>
+        // ضبط تاريخ البداية الصحيح 2 مارس 2026
+        const startDate = new Date("2026-03-02T00:00:00").getTime();
+        function updateCounter() {
+            const difference = new Date().getTime() - startDate;
+            document.getElementById("days").innerText = Math.floor(difference / 86400000);
+            document.getElementById("hours").innerText = Math.floor((difference % 86400000) / 3600000);
+            document.getElementById("minutes").innerText = Math.floor((difference % 3600000) / 60000);
+            document.getElementById("seconds").innerText = Math.floor((difference % 60000) / 1000);
+        }
+        setInterval(updateCounter, 1000); updateCounter();
+    </script>
+</body>
+</html>
